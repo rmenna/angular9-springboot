@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ada89a60-91d7-435e-a451-97ba5d9cc15f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/model/entity/cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/model/entity/Cliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="ClientesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -90,10 +92,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1618888917254" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1618802845530">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="328" y="13" key="SettingsEditor" timestamp="1618916097590">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="461" y="162" key="SettingsEditor/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@0.0.1920.1040" timestamp="1618802845530" />
+    <state x="328" y="13" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1618916097590" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1618915599042">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
