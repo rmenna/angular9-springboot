@@ -26,4 +26,15 @@ public class ClienteController {
     public Cliente acharPorId( @PathVariable Integer id) {
         return clienteRepository.findById(id).orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
+
+    @DeleteMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deletar( @PathVariable Integer id ) {
+        clienteRepository.findById(id)
+                .map( cliente -> {
+                    clienteRepository.delete(cliente);
+                    return Void.TYPE;
+                })
+                .orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+    }
 }
