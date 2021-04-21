@@ -37,4 +37,15 @@ public class ClienteController {
                 })
                 .orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
+
+    @PutMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void atualizar( @PathVariable Integer id, @RequestBody Cliente clienteAtualizado) {
+        clienteRepository.findById(id)
+                .map( cliente -> {
+                    clienteAtualizado.setId(cliente.getId());
+                    return clienteRepository.save(clienteAtualizado);
+                })
+                .orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+    }
 }
