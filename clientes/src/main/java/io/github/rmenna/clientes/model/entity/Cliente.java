@@ -1,12 +1,17 @@
 package io.github.rmenna.clientes.model.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Table(name = "clientes")
 public class Cliente {
 
     @Id
@@ -21,4 +26,9 @@ public class Cliente {
 
     @Column(name = "data_cadastro")
     private LocalDate dataCadastro;
+
+    @PrePersist
+    public void prePersist(){
+        setDataCadastro(LocalDate.now());
+    }
 }
