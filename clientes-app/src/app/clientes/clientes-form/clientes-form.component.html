@@ -3,18 +3,36 @@
     <li class="breadcrumb-item active">Cadastro</li>
 </ol>
 <div class="container">
-  <form>
+  <form #clientesForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="alert alert-success" role="alert" *ngIf="sucesso === true">
+          Cliente salvo/ataualizado com sucesso!
+        </div>
+        <div class="alert alert-danger" role="alert" *ngFor="let erro of erros">
+          {{ erro }}
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-6">
         <div class="form-group">
           <label>ID:</label>
-          <input type="text" class="form-control" disabled/>
+          <input type="text" class="form-control"
+            [ngModel]="cliente.id"
+            name="id"
+            disabled
+          />
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label>Data Cadastro:</label>
-          <input type="text" class="form-control" disabled/>
+          <input type="text" class="form-control"
+            [ngModel]="cliente.dataCadastro"
+            name="dataCadastro" 
+            disabled
+          />
         </div>
       </div>
     </div>
@@ -22,13 +40,17 @@
       <div class="col-md-6">
         <div class="form-group">
           <label>Nome:</label>
-          <input type="text" class="form-control" />
+          <input type="text" class="form-control"
+            [(ngModel)]="cliente.nome" name="nome"
+          />
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label>CPF:</label>
-          <input type="text" class="form-control" placeholder="000.000.000-00"/>
+          <input type="text" class="form-control" placeholder="000.000.000-00"
+            [(ngModel)]="cliente.cpf" name="cpf"
+          />
         </div>
       </div>
     </div>
