@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ClientesService } from 'src/app/clientes/clientes.service';
-import { Cliente } from '../cliente';
+import { Cliente } from '../Model/cliente';
 
 @Component({
   selector: 'app-clientes-form',
