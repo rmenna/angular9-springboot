@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ClientesRoutingModule } from './clientes-routing.module';
 import { ClientesFormComponent } from './clientes-form/clientes-form.component';
 import { FormsModule } from '@angular/forms';
-import { ClientesService } from './clientes.service';
+import { ClientesService } from './Service/clientes.service';
 import { ClientesListComponent } from './clientes-list/clientes-list.component';
 
 

@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { TemplateModule } from './template/template.module';
 import { HomeComponent } from './home/home.component'
 import { ClientesModule } from './clientes/clientes.module';
-import { ClientesService } from './clientes/clientes.service';
+import { ClientesService } from './clientes/Service/clientes.service';
 
 @NgModule({
   declarations: [

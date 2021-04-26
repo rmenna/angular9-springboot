@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { ClientesService } from '../clientes.service';
+import { Router, ActivatedRoute } from '@angular/router';
+import { ClientesService } from '../Service/clientes.service';
 import { Cliente } from '../Model/cliente';
 
 @Component({
@@ -27,5 +27,4 @@ export class ClientesListComponent implements OnInit {
   novoCadastro(){
     this.router.navigate(['/clientes-form'])
   }
-
 }
