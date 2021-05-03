@@ -24,7 +24,11 @@ export class ClientesService {
     return this.http.get<any>(`http://localhost:8080/api/clientes/${id}`)
   }
 
-  atualizar( cliente: Cliente ): Observable<any> {
+  atualizar(cliente: Cliente): Observable<any> {
     return this.http.put<Cliente>(`http://localhost:8080/api/clientes/${cliente.id}`,cliente);
+  }
+
+  deletar(cliente: Cliente): Observable<any> {
+    return this.http.delete<any>(`http://localhost:8080/api/clientes/${cliente.id}`)
   }
 }
