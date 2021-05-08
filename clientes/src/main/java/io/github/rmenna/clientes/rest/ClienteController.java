@@ -8,10 +8,12 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.Valid;
+import java.util.List;
 
 
 @RestController
 @RequestMapping("/api/clientes")
+@CrossOrigin("*")
 public class ClienteController {
 
     @Autowired
@@ -49,5 +51,10 @@ public class ClienteController {
                     return clienteRepository.save(clienteAtualizado);
                 })
                 .orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Cliente não encontrado"));
+    }
+
+    @GetMapping
+    public List<Cliente> obterTodos(){
+        return clienteRepository.findAll();
     }
 }
