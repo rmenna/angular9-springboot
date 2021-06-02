@@ -11,9 +11,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import javax.validation.Valid;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+
 
 @RestController
 @RequestMapping("/api/servicos-prestados")
@@ -26,7 +28,7 @@ public class ServicoPrestadoController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ServicoPrestado salvar(@RequestBody ServicoPrestadoDTO dto) {
+    public ServicoPrestado salvar(@RequestBody @Valid ServicoPrestadoDTO dto) {
         LocalDate data = LocalDate.parse(dto.getData(), DateTimeFormatter.ofPattern("dd/MM/yyy"));
         Integer idCliente = dto.getIdCliente();
         Cliente cliente = clienteRepository.findById(idCliente)
@@ -34,7 +36,7 @@ public class ServicoPrestadoController {
 
         ServicoPrestado servicoPrestado = new ServicoPrestado();
         servicoPrestado.setDescricao(dto.getDescricao());
-        servicoPrestado.setDate(data);
+        servicoPrestado.setData(data);
         servicoPrestado.setCliente(cliente);
         servicoPrestado.setValor( bigDecimalConverter.converter(dto.getPreco()) );
         return  serviçoPrestadoRepository.save(servicoPrestado);
