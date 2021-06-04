@@ -16,33 +16,33 @@ export class ClientesListComponent implements OnInit {
   mensagemSucesso: string;
   mensagemErro: string;
 
-  constructor( 
+  constructor(
     private router: Router,
     private clienteService: ClientesService
-    ) { }
+  ) { }
 
   ngOnInit(): void {
-    this.clienteService.getClientes().subscribe( response => {
+    this.clienteService.getClientes().subscribe(response => {
       this.clientes = response;
     })
   }
 
-  novoCadastro(){
-    this.router.navigate(['/clientes-form'])
+  novoCadastro() {
+    this.router.navigate(['/clientes/form'])
   }
 
-  preparaDelecao(cliente: Cliente){
+  preparaDelecao(cliente: Cliente) {
     this.clienteSelecionado = cliente;
   }
 
-  deletarCliente(){
+  deletarCliente() {
     this.clienteService.deletar(this.clienteSelecionado)
-    .subscribe(
-      response => {
-        this.mensagemSucesso = 'Cliente deletado com sucesso!'
-        this.ngOnInit();
-      },
-      error => this.mensagemErro = 'Erro ao deletar Cliente'
-    );
+      .subscribe(
+        response => {
+          this.mensagemSucesso = 'Cliente deletado com sucesso!'
+          this.ngOnInit();
+        },
+        error => this.mensagemErro = 'Erro ao deletar Cliente'
+      );
   }
 }

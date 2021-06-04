@@ -21,27 +21,27 @@ export class ClientesFormComponent implements OnInit {
     private clienteService: ClientesService,
     private router: Router,
     private activatedRouter: ActivatedRoute
-    ) {
+  ) {
     this.cliente = new Cliente();
   }
 
   ngOnInit(): void {
     let params: Observable<Params> = this.activatedRouter.params;
-    params.subscribe( urlParams => {
+    params.subscribe(urlParams => {
       this.id = urlParams['id'];
-      if ( this.id ) {
-        this.clienteService.getClienteById(this.id).subscribe( response => {
+      if (this.id) {
+        this.clienteService.getClienteById(this.id).subscribe(response => {
           this.cliente = response;
-        }, 
-        errorResponse => {
-          this.cliente = new Cliente();
-        })
+        },
+          errorResponse => {
+            this.cliente = new Cliente();
+          })
       }
     })
   }
 
   onSubmit() {
-    if ( this.cliente.id ) {
+    if (this.cliente.id) {
       this.clienteService.atualizar(this.cliente).subscribe(
         response => {
           this.sucesso = true;
@@ -66,6 +66,6 @@ export class ClientesFormComponent implements OnInit {
   }
 
   voltarParaListagem() {
-    this.router.navigate(['/clientes-list'])
+    this.router.navigate(['/clientes/lista'])
   }
 }
