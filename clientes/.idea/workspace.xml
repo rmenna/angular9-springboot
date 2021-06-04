@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ada89a60-91d7-435e-a451-97ba5d9cc15f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/model/entity/ServicoPrestado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/model/entity/ServicoPrestado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/repository/ServiçoPrestadoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/repository/ServiçoPrestadoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/rest/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/rest/ClienteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/rest/ServicoPrestadoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/rest/ServicoPrestadoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/rest/dto/ServicoPrestadoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/github/rmenna/clientes/rest/dto/ServicoPrestadoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/github/rmenna/clientes/model/entity/ServicoPrestado.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/rmenna/clientes/model/entity/ServicoPrestado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/github/rmenna/clientes/repository/ServiçoPrestadoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/rmenna/clientes/repository/ServiçoPrestadoRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/github/rmenna/clientes/rest/ClienteController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/rmenna/clientes/rest/ClienteController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/github/rmenna/clientes/rest/ServicoPrestadoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/rmenna/clientes/rest/ServicoPrestadoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/io/github/rmenna/clientes/rest/dto/ServicoPrestadoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/io/github/rmenna/clientes/rest/dto/ServicoPrestadoDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,28 +89,28 @@
       <screen x="1920" y="156" width="1366" height="728" />
     </state>
     <state x="2172" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@1920.156.1366.728" timestamp="1620001477299" />
-    <state width="1877" height="312" key="GridCell.Tab.0.bottom" timestamp="1622656494419">
+    <state width="1877" height="312" key="GridCell.Tab.0.bottom" timestamp="1622838221497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="312" key="GridCell.Tab.0.bottom/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@0.0.1920.1040" timestamp="1622656494419" />
+    <state width="1877" height="312" key="GridCell.Tab.0.bottom/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@0.0.1920.1040" timestamp="1622838221497" />
     <state width="1323" height="156" key="GridCell.Tab.0.bottom/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@1920.156.1366.728" timestamp="1620704457787" />
     <state width="1323" height="232" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1619471084704" />
-    <state width="1877" height="312" key="GridCell.Tab.0.center" timestamp="1622656494418">
+    <state width="1877" height="312" key="GridCell.Tab.0.center" timestamp="1622838221497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="312" key="GridCell.Tab.0.center/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@0.0.1920.1040" timestamp="1622656494418" />
+    <state width="1877" height="312" key="GridCell.Tab.0.center/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@0.0.1920.1040" timestamp="1622838221497" />
     <state width="1323" height="156" key="GridCell.Tab.0.center/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@1920.156.1366.728" timestamp="1620704457787" />
     <state width="1323" height="232" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1619471084704" />
-    <state width="1877" height="312" key="GridCell.Tab.0.left" timestamp="1622656494418">
+    <state width="1877" height="312" key="GridCell.Tab.0.left" timestamp="1622838221497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="312" key="GridCell.Tab.0.left/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@0.0.1920.1040" timestamp="1622656494418" />
+    <state width="1877" height="312" key="GridCell.Tab.0.left/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@0.0.1920.1040" timestamp="1622838221497" />
     <state width="1323" height="156" key="GridCell.Tab.0.left/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@1920.156.1366.728" timestamp="1620704457787" />
     <state width="1323" height="232" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1619471084704" />
-    <state width="1877" height="312" key="GridCell.Tab.0.right" timestamp="1622656494419">
+    <state width="1877" height="312" key="GridCell.Tab.0.right" timestamp="1622838221497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="312" key="GridCell.Tab.0.right/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@0.0.1920.1040" timestamp="1622656494419" />
+    <state width="1877" height="312" key="GridCell.Tab.0.right/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@0.0.1920.1040" timestamp="1622838221497" />
     <state width="1323" height="156" key="GridCell.Tab.0.right/-1366.165.1366.728/0.0.1920.1040/1920.156.1366.728@1920.156.1366.728" timestamp="1620704457787" />
     <state width="1323" height="232" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1619471084704" />
     <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1619408270014">
